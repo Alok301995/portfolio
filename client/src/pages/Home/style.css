@@ -1,5 +1,10 @@
 /* Global Class */
 
+.home {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
 .container {
   box-sizing: border-box;
   /* border: 1px solid blue; */
@@ -323,9 +328,10 @@ textarea {
 /* Media Query */
 
 @media screen and (max-width: 375px) {
-  /* .container {
-    border: 1px solid red;
-  } */
+  .container {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
   .intro__image {
     height: 10rem;
   }
@@ -397,11 +403,16 @@ textarea {
     width: 100%;
   }
   .contact__image {
-    height: 9rem;
+    height: 7rem;
+    width: 10rem;
   }
   .contact__header {
     font-size: 1.2rem;
     margin-top: 0.5rem;
+  }
+  .contact__form {
+    /* border: 1px solid red; */
+    width: 90%;
   }
   .contact__form form {
     flex: 1;
@@ -494,6 +505,90 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+  /* .container {
+    border: 1px solid red;
+  } */
+  .intro__image {
+    height: 10rem;
+  }
+
+  .info__container h1 {
+    font-size: 2rem;
+  }
+  .info__container h4 {
+    font-size: 1rem;
+  }
+  .info__container button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* About */
+  /* .about {
+  } */
+
+  .about__image {
+    height: 10rem;
+  }
+  .about__info {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 3rem 0rem;
+  }
+  .about__info__header {
+    font-size: 1.3rem;
+  }
+  .about__list {
+    width: 100%;
+  }
+  .span__basis {
+    font-size: 0.8rem;
+  }
+
+  /* Project */
+
+  .project__image {
+    height: 11rem;
+  }
+
+  .project__title h2 {
+    font-size: 1.3rem;
+  }
+  /* 
+  .project__info {
+    border: 1px solid red;
+  } */
+  .project__wrapper {
+    width: 95%;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  /* Contact Me  */
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    /* border: 1px solid green; */
+    width: 100%;
+  }
+  .contact__image {
+    height: 9rem;
+  }
+  .contact__header {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .contact__form form {
+    flex: 0.7;
+  }
+}
+@media screen and (max-width: 1024px) {
   /* .container {
     border: 1px solid red;
   } */
